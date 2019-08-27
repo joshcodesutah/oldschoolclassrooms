@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bennett Carll Floyd—Official</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <link rel="stylesheet" href="index2.css">
+        <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="/favicon.ico">
+
+        <script src="https://kit.fontawesome.com/60006dcbb6.js"></script>
+        <script src="index2.js"></script>
+      </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <a id="logo" href="javascript:autoScroll('jumbotron');">
+              <img src="Logos/BCF Logo-Offwhite.png" height="40" width="80" alt="Official BCF Logo" class="logo-bottom">
+              <img src="Logos/BCF Logo-Chocolate.png" height="40" width="80" alt="Official BCF Logo Chocolate" class="logo-top">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:autoScroll('services');">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:autoScroll('about');">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:autoScroll('portfolio');">Portfolio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:autoScroll('resume');">R&#233;sum&#233;</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:autoScroll('contact');">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="jumbotron" class="css-typing">
+          <div class="container">
+            <h1>
+              <a href="#" class="typewrite" data-period="1000" data-type=
+                '["Hello.", "I&rsquo;m Bennett Carll Floyd.", "(Call me Ben.)", "I write kick-ass web content.", "Check it out."]'>
+                <span class="wrap"></span>
+              </a>
+            </h1>
+
+            <a href="javascript:autoScroll('portfolio');" class="btn">View Portfolio</a>
+          </div>
+        </div>
+
+        <section id="services">
+            <div class="row">
+                <div class="col-lg">
+                  <h2>What I do</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                  <i class="far fa-lightbulb"></i>
+                  <h3>Content strategy</h3>
+                  I learn what makes your audience tick. What brings them joy. What keeps them up at night. Then I help you craft a seamless user experience that effortlessly leads them from brand awareness to loyalty.
+                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                </div>
+
+                <div class="col-md">
+                  <i class="far fa-keyboard"></i>
+                  <h3>SEO copywriting</h3>
+                  From targeted display ads to multi-page ecommerce websites&#8212;I’ve written it all. Whatever the project, I nail your brand’s unique voice and then wordsmith the hell out of it to drive the user toward action.
+                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                </div>
+
+                <div class="col-md">
+                  <i class="far fa-edit"></i>
+                  <h3>Editing & proofing</h3>
+                  Imagine web copy so clean you can eat off it. With my persnickety eye for linguistic detail, you can rest assured that every sentence, every syllable, and every semicolon will help establish your brand's credibility.
+                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md">
+              (Did I mention I also kinda do <a href="" onclick="errorMessage()">front-end web development</a>?)
+              </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="row">
+                <div class="col-lg">
+                    <img src="Images/Azio.jpg" alt="Mechanical Keyboard" class="img-fluid">
+                </div>
+
+                <div class="col-lg">
+                    <h2>About</h2>
+                    <p>By day, Bennett (AKA Ben) works as a professional marketing <a href="" onclick="errorMessage()">copywriter,</a> <a href="" onclick="errorMessage()">copyeditor,</a> and <a href="" onclick="errorMessage()">content strategist.</a> By night, he dabbles in <a href="" onclick="errorMessage()">web development,</a> voice-over, and outdoor cooking. Sometimes, he even daydreams about becomming a steampunk novelist, an audiobook narrator, or a world-renowned <a href="https://www.merriam-webster.com/dictionary/pogonotrophy" target="_blank">pogonotrophist.</a></p>
+                    <p>Usually, you’ll catch Ben rocking a roguish beard. But if you’re lucky, you might just spot him sporting a manly mustache.</p>
+                    <p><strong>SURGEON GENERAL&rsquo;S WARNING:</strong> Mustaches may cause delusions of anachronistic grandeur!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pull-quote">
+            <div class="row">
+                <div class="col-sm">
+                  <h3>
+                    <?php
+                      function buildString($fuelSources) {
+                      $result = "";
+                        foreach($fuelSources as $fuelSource) {
+                      $result .= $fuelSource. ", ";
+                      }
+                      return rtrim($result, ", ");
+                      } 
+
+                      $result = "";
+                      $sources = ["caffeine", "carbs", "and chocolate.&rdquo;"];
+
+                      echo "&ldquo;This writing machine runs on ";
+                      echo buildString($sources);
+                    ?>
+                  <br><br>
+                  &#8212;Me</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+          <div class="row">
+            <div class="col-lg">
+              <h2>Portfolio</h2>
+              <p>Click or tap on the images below to take a look at some samples of projects I've worked on over the years. That, or you can go <a href="https://bennettcarllfloyd.contently.com/" target="_blank">here</a> to browse my full online portfolio.</p>
+            </div>
+          </div>
+         
+          <div class="row">
+          <div class="col-lg">
+          <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://s3.amazonaws.com/external_clips/2058755/160411_CEHE_Brand_Book.pdf?1472350801" target="_blank"><img src="Images/CEHE-Gradient.jpg" class="d-block w-100" alt="Center for Excellence in Higher Education"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                  <h5>Client: Center for Excellence in Higher Education</h5>
+                  <p>I wrote and edited this full brand style guide for a family of nonprofit colleges and universities.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="https://insurance.safeco.com/" target="_blank"><img src="Images/Safeco-Gradient.jpg" class="d-block w-100" alt="Safeco Insurance"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Client: Safeco Insurance</h5>
+                  <p>This is an SEO website that I did intitial wireframing for. I also wrote and edited the copy for the entire site.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+              <a href="https://www.frontpointsecure.com/lp" target="_blank"><img src="Images/Frontpoint-Gradient.jpg" class="d-block w-100" alt="Frontpoint Security"></a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Client: Frontpoint Security</h5>
+                  <p>I did initial content strategy for several of the pages on this PPC microsite, as well as wrote and edited all the content.</p>
+                </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <i class="fas fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <i class="fas fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
+          </div>
+        </section>
+
+        <section id="resume">
+          <div class="row">
+            <div class="col-lg">
+              <h2>R&#233;sum&#233;</h2>
+              <p>Learn about some of my qualifications here or visit my <a href="https://www.linkedin.com/in/bennettfloyd/" target="_blank">LinkedIn profile for more details.</a></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg">
+              <i class="fas fa-business-time"></i>
+              <h3>Experience</h3>
+
+                <table>
+                  <tr>
+                    <th>Company/Client</th>
+                    <th>Location</th>
+                    <th>Job Title</th>
+                    <th>Dates Employed</th>
+                  </tr>
+
+                  <tr>
+                    <td>Clearlink</td>
+                    <td>Salt Lake City, UT</td>
+                    <td>Senior Copywriter/Content Strategist</td>
+                    <td>Oct. 2017&#8211;Present</td>
+                  </tr>
+
+                  <tr>
+                    <td>Center for Excellence in Higher Education</td>
+                    <td>Murray, UT</td>
+                    <td>Copywriter</td>
+                    <td>Oct. 2012&#8211;Oct. 2017</td>
+                  </tr>
+
+                  <tr>
+                    <td>Various Clients</td>
+                    <td>Salt Lake City, UT</td>
+                    <td>Freelance Copywriter/Editor</td>
+                    <td>Oct. 2014&#8211;Present</td>
+                  </tr> 
+                </table>
+            </div>
+
+            <div class="col-lg">
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Education</h3>
+
+                <table>
+                  <tr>
+                    <th>College</th>
+                    <th>Location</th>
+                    <th>Degree</th>
+                    <th>Date of Graduation</th>
+                  </tr>
+
+                  <tr>
+                    <td>Brigham Young University &#8211; Idaho</td>
+                    <td>Rexburg, ID</td>
+                    <td>BA English, Emphasis in Creative Writing</td>
+                    <td>Dec. 2008</td>
+                  </tr>
+                </table>
+            </div>
+
+            <div class="col-lg">
+              <i class="fas fa-award"></i>
+              <h3>Training & Certificates</h3>
+                
+                <table>
+                  <tr>
+                    <th>Institution</th>
+                    <th>Location</th>
+                    <th>Training/Certificate</th>
+                    <th>Date of Completion</th>
+                  </tr>
+
+                  <tr>
+                    <td>Salt Lake Community College</td>
+                    <td>Salt Lake City, UT</td>
+                    <td>Certificate of Completion, Web Design & Development</td>
+                    <td>Sept. 2019</td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+            <div class="row">
+              <div class="col-lg">
+                  <h2>Get in Touch</h2>
+                  <p>Fill out the form below, and your wildest dreams will come true, like <a href="https://www.google.com/search?q=a+million+and+one+wombats&client=firefox-b-1-d&channel=cus&source=lnms&tbm=isch&sa=X&ved=0ahUKEwizus_4q73jAhVLJzQIHaZSBKEQ_AUIEigC&biw=1280&bih=629&dpr=2" target="_blank">a million and one wombats</a> delivered directly to your doorstep.</p>
+              </div>           
+            </div>
+
+            <form>
+                <div class="form-row">
+                  <div class="col-auto">
+                    <label for="inputEmail4">First name</label><br>
+                    <input type="text" id="fname" placeholder="First Name">
+                  </div>
+
+                  <div class="col-auto">
+                    <label for="inputEmail4">Last name</label><br>
+                    <input type="text" id="lname" placeholder="Last Name">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-auto">
+                      <label for="inputEmail4">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </div>
+    
+                <button type="submit" class="btn">Deploy Wombats!</button>
+            </form>
+        </section>
+        
+        <script src="util.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

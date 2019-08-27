@@ -1,0 +1,584 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background style*/
+    background-color: #eaece9;
+    margin: 0;
+    padding: 0;
+
+    /*text style*/
+    font-family: "Open Sans", sans-serif;
+    color: #002d3a;
+}
+
+p {
+    text-align: left;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: "Bitter", serif;
+}
+
+h2 {
+    /*text style*/
+    font-size: 2.25em;
+    font-family: "Bitter", serif;
+
+    /*margin style*/
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: "Bitter", serif;
+}
+
+.navbar {
+    /*positioning*/
+    position: sticky;
+    top: 0;
+    display: flex;
+    z-index: 55;
+    justify-content: space-between;
+
+    /*text style*/
+    text-align: right;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+
+    /*background style*/
+    background-color: rgba(0,45,58,0.9);
+}
+
+#logo {
+    position: relative;
+}
+
+#logo .logo-top {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#logo:hover .logo-top {
+    display: inline;
+    transition: .25s;
+    position: top;
+    z-index: 99;
+    transform: scale(1.05) perspective(1px);
+}
+
+#logo:hover .logo-bottom {
+    display: none;
+}
+
+.navbar button {
+    color: #eaece9;
+    border: 3px solid #eaece9;
+    width: 45px;
+    border-radius: 10px;
+    padding: .4em;
+}
+
+.navbar ul {
+    margin-left: auto;
+}
+
+.navbar li {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.navbar button:hover {
+    color: #634219;
+    transition: .25s;
+    border: 3px solid #634219;
+    border-radius: 10px;
+}
+
+.navbar a {
+    color: #eaece9;
+}
+
+.navbar a:hover {
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.05) perspective(1px);
+}
+
+.navbar .dropdown-menu {
+    background-color: rgba(217,215,221,0.9);
+    margin-top: 10px;
+}
+
+.navbar .dropdown-menu a {
+    color: #002d3a;
+}
+
+.dropdown-menu a:hover {
+    color: #634219;
+    transition: .25s;
+}
+
+#jumbotron {
+    /*sizing*/
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+
+    /*flexbox stuff*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*text style*/
+    text-align: left;
+    color: #eaece9;
+    font-family: "Bitter", serif;
+
+    /*background styles*/
+    background-image: linear-gradient(rgba(0, 45, 58, 0.5), rgba(0, 0, 0, 0.5)), url("Images/164524918-mechanical-wallpapers.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+#jumbotron .btn {
+    /*positioning and sizing*/
+    display: block;
+    width: 175px;
+
+    /*padding and margins*/
+    padding: 0.5em;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    
+    /*border styles*/
+    border: 3px solid #eaece9;
+    border-radius: 10px;
+
+    /*text style*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #eaece9;
+}
+
+#jumbotron .btn:hover {
+    border: 3px solid #634219;
+    border-radius: 10px;
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.05) perspective(1px);
+}
+
+#jumbotron h1 {
+    /*text style*/
+    font-size: calc(40px + (52 - 38) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.3em + (1.3 - 1.0) * ((100vw - 300px)/(1600 - 300)));
+    color: #eaece9;
+
+    /*margins*/
+    margin-top: 3.5em;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.typewrite {
+    color: initial;
+}
+
+.typewrite:hover {
+   text-decoration: none;
+}
+
+.container a {
+    color: #eaece9;
+}
+
+.container a:hover {
+    color: #eaece9;
+    transition: .25s; 
+}
+
+#services .col-md .btn {
+    display: block;
+    align-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 0.5em;
+    background-color: none;
+
+    /*border styles*/
+    border: 3px solid #002d3a;
+    border-radius: 10px;
+    width: 150px;
+
+    /*text style*/
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Bitter", serif;
+    text-decoration: none;
+    color: #002d3a;
+}
+
+#services {
+    position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+#services .row {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+#services .col-md {
+    padding: 1em;
+}
+
+#services .col-md .btn:hover {
+    border: 3px solid #634219;
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.05) perspective(1px);
+}
+
+#services .col-md i {
+    font-size: 3em;
+    text-align: center;
+    margin: 25px;
+}
+
+#services a {
+    color: #814e00;
+}
+
+#services a:hover {
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.2) perspective(1px); 
+}
+
+#about {
+    position: center center;
+    background-size: cover;
+    background-color: #d9d7dd;
+    padding: 25px;
+}
+
+#about img {
+    position: center center;
+    height: 375px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    padding: 15px;
+}
+
+#about .col-lg {
+    position: center center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+#about h2 {
+    margin-top: .15em;
+    margin-bottom: .5em;
+    padding: .15em;
+}
+
+#about p {
+    padding: .15em;
+}
+
+#about a {
+    color: #814e00;
+}
+
+#about a:hover {
+    color: #634219;
+    transition: .25s;
+}
+
+.img-fluid { 
+    max-width: auto;
+    height: auto;
+}
+
+#pull-quote {
+    /*sizing*/
+    height: 40vh;
+    width: 100vw;
+    
+    /*background styles*/
+    background-image: linear-gradient(rgba(0, 45, 58, 0.7), rgba(0, 0, 0, 0.7)), url("Images/164161849-coffee-wallpapers.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+
+    /*flexbox stuff*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*text style*/
+    text-align: left;
+    color: #eaece9;
+    font-family: "Bitter", serif;
+
+    /*margin styles*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pull-quote h3 {
+    /*text style*/
+    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.2em + (1.2 - 1.0) * ((100vw - 300px)/(1600 - 300)));
+
+    /*margins*/
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0; 
+}
+
+#pull-quote .col-sm {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#portfolio {
+    background-size: cover;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+    color: #002d3a;
+}
+
+/* #portfolio .row {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#portfolio h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: .15em;
+    text-align: center;
+
+}
+
+#portfolio p {
+    text-align: center;
+}
+
+#portfolio i {
+    color: #eaece9;
+    font-size: 3em;
+}
+
+#portfolio i:hover {
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.05) perspective(1px); 
+}
+
+#portfolio a {
+    cursor: pointer;
+    color: #814e00;
+}
+
+#portfolio a:hover {
+    color: #634219;
+    transition: .25s;
+}
+
+.bd-example {
+    position: center center;
+}
+
+#carouselExampleCaptions .carousel-indicators {
+    bottom: 10%;
+}
+
+#carouselExampleCaptions .carousel-caption {
+    bottom: 13%;
+}
+
+#carouselExampleCaptions .carousel-item {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    color: #eaece9;
+}
+
+.carousel-item img {
+    background-size: cover;
+}
+
+.carousel-item h5 {
+    font-family: "Bitter", serif;
+    color: #eaece9;
+}
+
+.carousel-item p {
+    font-family: "Open Sans", sans-serif;
+    color: #eaece9;
+}
+
+.carousel-item .active {
+    display: inline-block;
+}
+
+.carousel-control-prev {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-control-next {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#resume {
+    position: center center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d9d7dd;
+    background-size: cover;
+    margin-bottom: 35px;
+}
+
+#resume h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#resume h3 {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto; 
+    padding-bottom: 15px;  
+}
+
+#resume p {
+    text-align: center;
+}
+
+#resume table {
+    border: 3px solid #002d3a;
+    border-radius: 10px;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-bottom: 50px;
+    border-collapse: inherit;
+    color: #002d3a;
+}
+
+#resume i {
+    display: block;
+    align-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-align: center;
+    margin: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #002d3a;
+}
+
+#resume a {
+    color: #814e00;
+}
+
+#resume a:hover {
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.2) perspective(1px); 
+}
+
+#resume th {
+    text-align: center;
+}
+
+#resume td {
+    text-align: top;
+}
+
+#contact {
+    position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #002d3a;
+}
+
+#contact .btn {
+    border: 3px solid #002d3a;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Bitter", serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact .btn:hover {
+    border: 3px solid #634219;
+    border-radius: 10px;
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.05) perspective(1px);
+}
+
+#contact .col-lg {
+    padding: 15px;
+    margin: 15px;
+}
+
+#contact a {
+    color: #814e00;
+}
+
+#contact a:hover {
+    color: #634219;
+    transition: .25s;
+    transform: scale(1.2) perspective(1px); 
+}
