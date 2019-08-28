@@ -19,9 +19,9 @@
       </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg sticky-top">
-            <a id="logo" href="javascript:autoScroll('jumbotron');">
-              <img src="Logos/inverted.png" height="60" width="70" alt="Official Old School Classrooms Logo" class="logo">
+        <nav class="navbar navbar-expand-lg">
+            <a id="logo">
+              <img src="Logos/inverted.png" height="50" width="50" alt="Official Old School Classrooms Logo" class="logo">
             </a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +30,21 @@
   
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="blank">Classes</a>
-                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Classes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">ManMade</a>
+                      <a class="dropdown-item" href="#">She-Can</a>
+                      <a class="dropdown-item" href="#">Re"Doin'"</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Other Classes</a>
+                    </div>
+                  </li>
   
                     <li class="nav-item">
                         <a class="nav-link" href="blank">About</a>
-                    </li>
-  
-                    <li class="nav-item">
-                        <a class="nav-link" href="blank">Shop</a>
                     </li>
   
                     <li class="nav-item">
@@ -49,6 +54,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="blank">Contact</a>
                     </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="blank">Shop <i class="fas fa-shopping-cart"></i></a>
+                  </li>
                 </ul>
             </div>
         </nav>
@@ -62,263 +71,105 @@
               </a>
             </h1>
 
-            <a href="javascript:autoScroll('portfolio');" class="btn">Browse Classes</a>
+            <a class="btn">Browse Classes <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
 
-        <section id="services">
+        <section id="featured-classes">
             <div class="row">
                 <div class="col-lg">
-                  <h2>What I do</h2>
+                  <h2>Featured Classes</h2>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md">
-                  <i class="far fa-lightbulb"></i>
-                  <h3>Content strategy</h3>
-                  I learn what makes your audience tick. What brings them joy. What keeps them up at night. Then I help you craft a seamless user experience that effortlessly leads them from brand awareness to loyalty.
-                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                  <i class="fas fa-tools"></i>
+                  <h3>ManMade</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a href="blank" class="btn" target="blank">Learn More</a>
                 </div>
 
                 <div class="col-md">
-                  <i class="far fa-keyboard"></i>
-                  <h3>SEO copywriting</h3>
-                  From targeted display ads to multi-page ecommerce websites&#8212;I’ve written it all. Whatever the project, I nail your brand’s unique voice and then wordsmith the hell out of it to drive the user toward action.
-                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                  <i class="fas fa-fist-raised"></i>
+                  <h3>She-Can</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a href="blank" class="btn" target="blank">Learn More</a>
                 </div>
 
                 <div class="col-md">
-                  <i class="far fa-edit"></i>
-                  <h3>Editing & proofing</h3>
-                  Imagine web copy so clean you can eat off it. With my persnickety eye for linguistic detail, you can rest assured that every sentence, every syllable, and every semicolon will help establish your brand's credibility.
-                  <a href="#" class="btn" onclick="errorMessage()">Learn More</a>
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <h3>Re"Doin'"</h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <a href="blank" class="btn" target="blank">Learn More</a>
                 </div>
             </div>
 
             <div class="row">
               <div class="col-md">
-              (Did I mention I also kinda do <a href="" onclick="errorMessage()">front-end web development</a>?)
+              (Or view all classes <a href="#" target="blank">here</a>.)
               </div>
             </div>
         </section>
 
-        <section id="about">
+        <section id="what-is-OSC">
             <div class="row">
                 <div class="col-lg">
-                    <img src="Images/Azio.jpg" alt="Mechanical Keyboard" class="img-fluid">
+                    <img src="Images/pexels-photo-1015568.jpeg" alt="Mechanical Keyboard" class="img-fluid">
                 </div>
 
                 <div class="col-lg">
-                    <h2>About</h2>
-                    <p>By day, Bennett (AKA Ben) works as a professional marketing <a href="" onclick="errorMessage()">copywriter,</a> <a href="" onclick="errorMessage()">copyeditor,</a> and <a href="" onclick="errorMessage()">content strategist.</a> By night, he dabbles in <a href="" onclick="errorMessage()">web development,</a> voice-over, and outdoor cooking. Sometimes, he even daydreams about becomming a steampunk novelist, an audiobook narrator, or a world-renowned <a href="https://www.merriam-webster.com/dictionary/pogonotrophy" target="_blank">pogonotrophist.</a></p>
-                    <p>Usually, you’ll catch Ben rocking a roguish beard. But if you’re lucky, you might just spot him sporting a manly mustache.</p>
-                    <p><strong>SURGEON GENERAL&rsquo;S WARNING:</strong> Mustaches may cause delusions of anachronistic grandeur!</p>
+                    <h2>What is Old School Classrooms?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </section>
 
-        <section id="pull-quote">
+        <section id="testimonials">
             <div class="row">
                 <div class="col-sm">
                   <h3>
-                    <?php
-                      function buildString($fuelSources) {
-                      $result = "";
-                        foreach($fuelSources as $fuelSource) {
-                      $result .= $fuelSource. ", ";
-                      }
-                      return rtrim($result, ", ");
-                      } 
-
-                      $result = "";
-                      $sources = ["caffeine", "carbs", "and chocolate.&rdquo;"];
-
-                      echo "&ldquo;This writing machine runs on ";
-                      echo buildString($sources);
-                    ?>
+                  "Dude. Old School Classrooms, like, changed my life."
                   <br><br>
-                  &#8212;Me</h3>
+                  &#8212;Some guy on the internet</h3>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio">
+        <div id="footer">
           <div class="row">
             <div class="col-lg">
-              <h2>Portfolio</h2>
-              <p>Click or tap on the images below to take a look at some samples of projects I've worked on over the years. That, or you can go <a href="https://bennettcarllfloyd.contently.com/" target="_blank">here</a> to browse my full online portfolio.</p>
-            </div>
-          </div>
-         
-          <div class="row">
-          <div class="col-lg">
-          <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-              </ol>
+              <ul class="footer-nav">
+                <li>
+                  <a class="nav-link" href="blank">Classes</a>
+                </li>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="https://s3.amazonaws.com/external_clips/2058755/160411_CEHE_Brand_Book.pdf?1472350801" target="_blank"><img src="Images/CEHE-Gradient.jpg" class="d-block w-100" alt="Center for Excellence in Higher Education"></a>
-                  <div class="carousel-caption d-none d-md-block">
-                  <h5>Client: Center for Excellence in Higher Education</h5>
-                  <p>I wrote and edited this full brand style guide for a family of nonprofit colleges and universities.</p>
-              </div>
-            </div>
+                <li>
+                  <a class="nav-link" href="blank">About</a>
+                </li>
+  
+                <li>
+                  <a class="nav-link" href="blank">Blog</a>
+                </li>
+  
+                <li>
+                  <a class="nav-link" href="blank">Contact</a>
+                </li>
 
-            <div class="carousel-item">
-              <a href="https://insurance.safeco.com/" target="_blank"><img src="Images/Safeco-Gradient.jpg" class="d-block w-100" alt="Safeco Insurance"></a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Client: Safeco Insurance</h5>
-                  <p>This is an SEO website that I did intitial wireframing for. I also wrote and edited the copy for the entire site.</p>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-              <a href="https://www.frontpointsecure.com/lp" target="_blank"><img src="Images/Frontpoint-Gradient.jpg" class="d-block w-100" alt="Frontpoint Security"></a>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Client: Frontpoint Security</h5>
-                  <p>I did initial content strategy for several of the pages on this PPC microsite, as well as wrote and edited all the content.</p>
-                </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <i class="fas fa-angle-left"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <i class="fas fa-angle-right"></i>
-            <span class="sr-only">Next</span>
-          </a>
-          </div>
-          </div>
-        </section>
-
-        <section id="resume">
-          <div class="row">
-            <div class="col-lg">
-              <h2>R&#233;sum&#233;</h2>
-              <p>Learn about some of my qualifications here or visit my <a href="https://www.linkedin.com/in/bennettfloyd/" target="_blank">LinkedIn profile for more details.</a></p>
+                <li>
+                  <a class="nav-link" href="blank">Shop</a>
+                  </li>
+              </ul>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-lg">
-              <i class="fas fa-business-time"></i>
-              <h3>Experience</h3>
-
-                <table>
-                  <tr>
-                    <th>Company/Client</th>
-                    <th>Location</th>
-                    <th>Job Title</th>
-                    <th>Dates Employed</th>
-                  </tr>
-
-                  <tr>
-                    <td>Clearlink</td>
-                    <td>Salt Lake City, UT</td>
-                    <td>Senior Copywriter/Content Strategist</td>
-                    <td>Oct. 2017&#8211;Present</td>
-                  </tr>
-
-                  <tr>
-                    <td>Center for Excellence in Higher Education</td>
-                    <td>Murray, UT</td>
-                    <td>Copywriter</td>
-                    <td>Oct. 2012&#8211;Oct. 2017</td>
-                  </tr>
-
-                  <tr>
-                    <td>Various Clients</td>
-                    <td>Salt Lake City, UT</td>
-                    <td>Freelance Copywriter/Editor</td>
-                    <td>Oct. 2014&#8211;Present</td>
-                  </tr> 
-                </table>
-            </div>
-
-            <div class="col-lg">
-              <i class="fas fa-graduation-cap"></i>
-              <h3>Education</h3>
-
-                <table>
-                  <tr>
-                    <th>College</th>
-                    <th>Location</th>
-                    <th>Degree</th>
-                    <th>Date of Graduation</th>
-                  </tr>
-
-                  <tr>
-                    <td>Brigham Young University &#8211; Idaho</td>
-                    <td>Rexburg, ID</td>
-                    <td>BA English, Emphasis in Creative Writing</td>
-                    <td>Dec. 2008</td>
-                  </tr>
-                </table>
-            </div>
-
-            <div class="col-lg">
-              <i class="fas fa-award"></i>
-              <h3>Training & Certificates</h3>
-                
-                <table>
-                  <tr>
-                    <th>Institution</th>
-                    <th>Location</th>
-                    <th>Training/Certificate</th>
-                    <th>Date of Completion</th>
-                  </tr>
-
-                  <tr>
-                    <td>Salt Lake Community College</td>
-                    <td>Salt Lake City, UT</td>
-                    <td>Certificate of Completion, Web Design & Development</td>
-                    <td>Sept. 2019</td>
-                  </tr>
-                </table>
+            <div class="container text-center">
+              <small>Copyright &copy; Old School Classrooms 2019–2020</small>
             </div>
           </div>
-        </section>
-
-        <section id="contact">
-            <div class="row">
-              <div class="col-lg">
-                  <h2>Get in Touch</h2>
-                  <p>Fill out the form below, and your wildest dreams will come true, like <a href="https://www.google.com/search?q=a+million+and+one+wombats&client=firefox-b-1-d&channel=cus&source=lnms&tbm=isch&sa=X&ved=0ahUKEwizus_4q73jAhVLJzQIHaZSBKEQ_AUIEigC&biw=1280&bih=629&dpr=2" target="_blank">a million and one wombats</a> delivered directly to your doorstep.</p>
-              </div>           
-            </div>
-
-            <form>
-                <div class="form-row">
-                  <div class="col-auto">
-                    <label for="inputEmail4">First name</label><br>
-                    <input type="text" id="fname" placeholder="First Name">
-                  </div>
-
-                  <div class="col-auto">
-                    <label for="inputEmail4">Last name</label><br>
-                    <input type="text" id="lname" placeholder="Last Name">
-                  </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-auto">
-                      <label for="inputEmail4">Email</label>
-                      <input type="email" class="form-control" id="email" placeholder="Email">
-                    </div>
-                </div>
-    
-                <button type="submit" class="btn">Deploy Wombats!</button>
-            </form>
-        </section>
+        </div>
         
         <script src="util.js"></script> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    
